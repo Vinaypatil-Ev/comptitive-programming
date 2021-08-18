@@ -2,8 +2,8 @@
 class Graph:
     def __init__(self, V):
         self.V = V
-        self.graph = [[float("inf")] * self.V for _ in range(self.V)]
-        self.dist = [[0] * self.V for _ in range(self.V)]
+        self.graph = [[0] * self.V for _ in range(self.V)]
+        self.dist = [[float("inf")] * self.V for _ in range(self.V)]
         self.next = [[0] * self.V for _ in range(self.V)]
         self.set = False
         self.solve = False
@@ -19,9 +19,9 @@ class Graph:
     def setup(self):
         for i in range(self.V):
             for j in range(self.V):
-                if self.graph[i][j] != float("inf"):
+                if self.graph[i][j] != 0:
+                    self.dist[i][j] = self.graph[i][j]
                     self.next[i][j] = j
-                self.dist[i][j] = self.graph[i][j]
     
     def floyd_warshall(self):
         for k in range(self.V):
