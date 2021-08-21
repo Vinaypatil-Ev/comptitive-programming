@@ -103,11 +103,11 @@ if __name__ == "__main__":
     # half_pyramid(height)
     # inverted_half_pyramid(height)
     # inverted_half_hollow_pyramid(height)
-    # full_pyramid(height)
+    full_pyramid(height)
     # full_inverted_pyramid(height)
     # full_hollow_pyramid(height)
     # half_pyramid_with_no(height)
     # half_inverted_pyramid_with_no(height)
-    # half_hollow_pyramid_with_no(height)
+    half_hollow_pyramid_with_no(height)
     
 
