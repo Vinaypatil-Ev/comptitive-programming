@@ -1,8 +1,9 @@
-from timeit import timeit
+import time
 def fibo(n):
     if n == 1 or n == 2:
         return 1
     return fibo(n - 1) + fibo(n - 2)
+
 
 def fiboi(n):
     a = 1
@@ -16,9 +17,17 @@ def fiboi(n):
         b = c
     return c
 
+
 if __name__ == "__main__":
-    n  = 15
+    n  = 20
     # x = fibo(n)
-    print((timeit(lambda: fibo(n))), "time")
-    x = fiboi(n)
-    print(f"fibo of {n} is {x}")
+    s1 = time.time()
+    fiboi(n)
+    s2 = time.time()
+    print(f"iterative time for fibo of {n}: {(s2 - s1)*1000}")
+    s3 = time.time()
+    fibo(n)
+    s4 = time.time()
+    print(f"recurse time for fibo of {n}: {(s4 - s3)*1000}")
+    # x = fiboi(n)
+    # print(f"fibo of {n} is {x}")

@@ -1,7 +1,7 @@
 def is_rotate(s1, s2) -> bool:
     if len(s1) != len(s2):
         return False
-    s: str = s1 + s2
+    s: str = s1 + s1
     if s.count(s2) > 0:
         return True
     return False

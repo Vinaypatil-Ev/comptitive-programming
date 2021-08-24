@@ -17,7 +17,6 @@ def is_sub2(s, sub):
     while left < n:
         if right == m - 1:
             return True
-        print(s[left], sub[right], s[left + right2], sub[right2], right, right2)
         if s[left] == sub[right] and s[left + right2] == sub[right2]:
             right += 1
             right2 -= 1
