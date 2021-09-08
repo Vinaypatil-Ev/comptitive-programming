@@ -1,11 +1,23 @@
-"""
+import math
+# def numOfWays(nums):
+#     def f(nums):
+#         if len(nums) <= 2: 
+#             return 1
+#         left = [v for v in nums if v < nums[0]]
+#         right = [v for v in nums if v > nums[0]]
+#         return math.comb(len(left)+len(right), len(right)) * f(left) * f(right)
+#     return (f(nums)-1) % (10**9+7)
 
 
-[0, 1, 0, 0, 1, 2, 0, 1, 2, 1, 2]
 
-dutch national flag algorithm
-
-
-# [0,1 ]
-
-"""
+def numOfWays(nums):
+    def fun(nums):
+        if len(nums) <= 2:
+            return 1
+        left = [v for v in nums if v < nums[0]]
+        right = [v for v in nums if v > nums[0]]
+        return math.comb(len(left) + len(right), len(right)) * fun(left) * fun(right)
+    return ((fun(nums) -1) % 10 ** 9 + 7)
+# print(math.comb)
+a = list(map(int, input().split()))
+print(numOfWays(a))
