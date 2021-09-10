@@ -1,0 +1,2 @@
+(start, len(word)):
+    #     print
