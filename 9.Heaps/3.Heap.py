@@ -8,23 +8,25 @@ class Heap:
         left = 2 * i + 1
         right = 2 * i + 2
         largest = None
-        if left <= self.size and self.heap[left] > self.heap[i]:
+        if left < self.size and self.heap[left] > self.heap[i]:
             largest = left
         else:
             largest = i
-        if right <= self.size and self.heap[right] > self.heap[largest]:
+        if right < self.size and self.heap[right] > self.heap[largest]:
             largest = right
         if largest != i:
             self._swap(i, largest)
-            i = (i - 1) // 2
+            self.max_heapify(largest)
     
     def min_heapify(self):
         pass
     
     def extract_max(self):
-        if self.size == 0:
-            print("heap underflow")
-            return
+        if self.size < 1:
+            raise OverflowError("heap underflow")
+        if self.size == 1:
+            self.size = 0
+            return self.heap.pop()
         ele = self.heap[0]
         self.heap[0] = self.heap.pop()
         self.size -= 1
@@ -60,16 +62,5 @@ if __name__ == "__main__":
         h.insert_key(i)
     print(h.heap)
     print(h.extract_max())
-    print(h.heap)
     print(h.extract_max())
-    print(h.heap)
-    print(h.extract_max())
-    print(h.heap)
-    print(h.extract_max())
-    print(h.heap)
-    print(h.extract_max())
-    print(h.heap)
-    print(h.extract_max())
-    print(h.heap)
-    print(h.extract_max())
-    print(h.heap)
+    

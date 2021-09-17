@@ -2,5 +2,33 @@
     "files.associations": {
         "*.cs": "csharp",
         "iostream": "cpp"
-    }
+    },
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "askForPassword": true,
+            "driver": "MySQL",
+            "name": "root",
+            "username": "root",
+            "database": "MySql"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "askForPassword": true,
+            "driver": "MySQL",
+            "name": "vsev",
+            "username": "ev",
+            "database": "ncer"
+        }
+    ]
 }
