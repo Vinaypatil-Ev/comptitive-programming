@@ -2,3 +2,4 @@
 .tempCode
 .*exe
 *.bin
+*.vs*
