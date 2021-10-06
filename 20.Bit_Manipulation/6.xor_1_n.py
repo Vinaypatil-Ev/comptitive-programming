@@ -24,4 +24,3 @@ if __name__ == "__main__":
     n = int(input())
     print(xor1n(n))
     print(xor1ne(n))
-    # print(xor1ne(n))
