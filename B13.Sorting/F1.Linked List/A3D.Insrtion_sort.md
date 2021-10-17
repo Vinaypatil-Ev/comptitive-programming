@@ -8,14 +8,16 @@
 3. Again scan the LL from left to right. Compare the value of extracted node to each node in the list untill you get value greater than the value of extracted node
 4. Return next of dummy node
 
-## Code - python
+## Code - 
 
-```py
-def insertion_sort(head)
+### Python
+
+```
+def isertion_sort(head)
         if not head or not head.next:
             return head
   
-        dummy = Node(float("-inf"))
+        dummy = ListNode(float("-inf"))
         dummy.next = head
         temp = head.next
         pre = head
