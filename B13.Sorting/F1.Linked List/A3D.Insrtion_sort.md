@@ -1,14 +1,14 @@
 # Insertion sort on Linked list
 
 
-#### Algorithm
+## Algorithm
 
 1. create the dummy node with value INT_MIN (python float("-inf")) and make its next to head of linked list
 2. Scan the LL from left to right. Extract(remove) the node which is samller than its previous node by making previous's next pointer point to the next of that node. Store that node in curr variable
 3. Again scan the LL from left to right. Compare the value of extracted node to each node in the list untill you get value greater than the value of extracted node
 4. Return next of dummy node
 
-#### Code - python
+## Code - python
 
 ```
 def isertion_sort(head)
