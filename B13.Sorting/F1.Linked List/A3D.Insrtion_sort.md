@@ -46,5 +46,5 @@ def insertion_sort_linked_list(head)
 
 #### Links:
 
-* [147-insertion sort list(leetcode)](https://leetcode.com/problems/insertion-sort-list/)
-* [insertion sort on linked list(gfg)](https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/)
+* [147-insertion sort list (leetcode)](https://leetcode.com/problems/insertion-sort-list/)
+* [insertion sort on linked list (gfg)](https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/)
