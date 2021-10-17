@@ -15,7 +15,7 @@ def insertion_sort(head)
         if not head or not head.next:
             return head
   
-        dummy = ListNode(float("-inf"))
+        dummy = Node(float("-inf"))
         dummy.next = head
         temp = head.next
         pre = head
