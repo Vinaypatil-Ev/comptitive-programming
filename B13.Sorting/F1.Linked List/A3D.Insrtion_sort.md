@@ -1,7 +1,6 @@
 # Insertion sort on Linked list
 
-
-## Algorithm
+## Algorithm:
 
 1. create the dummy node with value INT_MIN (python float("-inf")) and make its next to head of linked list
 2. Scan the LL from left to right. Extract(remove) the node which is samller than its previous node by making previous's next pointer point to the next of that node. Store that node in curr variable
