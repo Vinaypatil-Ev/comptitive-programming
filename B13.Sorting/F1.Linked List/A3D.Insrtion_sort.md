@@ -1,4 +1,4 @@
-## Insertion sort on Linked list
+# Insertion sort on Linked list
 
 
 #### Algorithm
@@ -10,8 +10,8 @@
 
 #### Code - python
 
-```py
-def insertion_sort(head)
+```
+def isertion_sort(head)
         if not head or not head.next:
             return head
   
