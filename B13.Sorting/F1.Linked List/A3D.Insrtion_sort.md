@@ -40,11 +40,11 @@ def insertion_sort_linked_list(head)
         return dummy.next
 ```
 
-`Time complexity - O(n^2)`
+`Time complexity - *O(n^2)*`
 
 `Space Complexity - O(1)`
 
 #### Links:
 
-* [147.leetcode insertion sort list](https://leetcode.com/problems/insertion-sort-list/)
+* [147 - leetcode insertion sort list](https://leetcode.com/problems/insertion-sort-list/)
 * [Gfg insertion sort on linked list](https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/)
