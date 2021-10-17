@@ -8,12 +8,12 @@
 3. Again scan the LL from left to right. Compare the value of extracted node to each node in the list untill you get value greater than the value of extracted node
 4. Return next of dummy node
 
-## Code - 
+## Code:
 
 ### Python
 
-```
-def isertion_sort(head)
+```py
+def insertion_sort_linked_list(head)
         if not head or not head.next:
             return head
   
