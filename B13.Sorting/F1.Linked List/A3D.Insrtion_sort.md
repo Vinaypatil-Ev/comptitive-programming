@@ -10,8 +10,8 @@
 
 #### Code - python
 
-```
-def isertion_sort(head)
+```py
+def insertion_sort(head)
         if not head or not head.next:
             return head
   
