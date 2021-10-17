@@ -40,7 +40,7 @@ def insertion_sort_linked_list(head)
         return dummy.next
 ```
 
-`Time complexity - *O(n^2)*`
+`Time complexity - O(n^2)`
 
 `Space Complexity - O(1)`
 
