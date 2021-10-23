@@ -11,8 +11,10 @@ Output: "Mr%20John%20Smith"
 
 ### 1.Pythonic
 
-```
+```py
 def urlify(s):
     s = s.split()
     return "%20".join(s)
 ```
+
+### 2.left to right travesal and remove space

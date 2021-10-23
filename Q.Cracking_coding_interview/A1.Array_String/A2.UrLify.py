@@ -2,6 +2,9 @@ def urlify(s):
     s = s.split()
     return "%20".join(s)
 
+def urlify(s):
+    pass
+
 
 
 if __name__ == "__main__":
