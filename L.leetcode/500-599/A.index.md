@@ -1,4 +1,4 @@
-# 500-599 leetcode
+# leetcode 500-599
 
 507.[Perfect No](507.%20Perfect%20Number.md)
 
