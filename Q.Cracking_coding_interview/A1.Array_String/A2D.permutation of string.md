@@ -32,8 +32,8 @@ Space complexity - O(n^2)
 
 Note - length of both strings should be equal else return False
 
-1.Permution: Generate all the permation of first string and check wether it second string
+##### 1.Permution: Generate all the permation of first string and check wether it second string
 
-2.Sorting: sort both string and compare both strings - O(nlogn)
+##### 2.Sorting: sort both string and compare both strings - O(nlogn)
 
-3.Hash map and Array[26]: Calculate frequecies of each each character in both string and store it into hashmap/Array[26] and compare these hashmaps/Array if they are eqal then return True - O(n)
+##### 3.Hash map and Array[26]: Calculate frequecies of each each character in both string and store it into hashmap/Array[26] and compare these hashmaps/Array if they are eqal then return True - O(n)
