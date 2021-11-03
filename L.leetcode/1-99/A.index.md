@@ -6,6 +6,10 @@
 
 46.[Permutation](46.Permutations.md)
 
+51.[Nqueen](51.Nqueen.md)
+
+52.[Nqueen - II](52.Nqueen%20II.md)
+
 77.[Combinations](77.Combinations.md)
 
 78.[Subsets.](78.Subsets.md)
