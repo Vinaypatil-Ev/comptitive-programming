@@ -60,11 +60,12 @@ if __name__ == "__main__":
         ["j", "l"]
     ]
     # arr = ['c', 'a', 'c', 'b', 'a', 'd', 'b', 'd', 'e', 'd', 'e', 'a', 'e', 'f', 'f', 'k', 'f', 'j', 'j', 'm', 'd', 'h', 'd', 'g', 'g', 'i', 'h', 'i', 'h', 'j', 'i', 'l', 'j', 'l']
-    arr = [5, 0, 5, 2, 4, 0, 4, 1, 2, 3, 3, 1]
-    v = [0, 1, 2, 3, 4, 5]
-    # graph = create_graph(edge_list)
-    graph2 = create_graph2(arr)
-    print(graph2)
+    # arr = [5, 0, 5, 2, 4, 0, 4, 1, 2, 3, 3, 1]
+    v = [0, 1, 2, 3]
+    edge_list = [[1,0],[2,0],[3,1],[3,2]]
+    graph = create_graph(edge_list)
+    # graph2 = create_graph2(arr)
+    # print(graph2)
     # graph2 = create_graph2(arr, True)
     # print(graph2)
-    print(topological_sort(graph2, v))
+    print(topological_sort(graph, v))
