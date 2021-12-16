@@ -24,7 +24,7 @@ class Graph:
             return False
     def detect_cycle(self):
         visited = set()
-        for i in range(self.v):
+        for i in range(self.V):
             if i not in visited:
                 if self.dc(self.graph, 0, set(), self.stack):
                     return True
@@ -35,7 +35,9 @@ class Graph:
 
 if __name__ == "__main__":
     # arr = [0, 1, 0, 2, 1, 0, 2, 0, 2, 3, 3, 3]
-    arr = [0, 1, 0, 2, 2, 1, 1, 3]
-    g = Graph(4)
+    # arr = [0, 1, 0, 2, 2, 1, 1, 3]
+    arr = [5, 3, 3, 1, 1, 2, 2, 4,  4, 0]
+    g = Graph(6)
     g.from_arr(arr)
-    g.detect_cycle()
+    x = g.detect_cycle()
+    print(x)
