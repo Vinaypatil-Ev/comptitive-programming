@@ -31,13 +31,15 @@ class Trie():
     def retrive_all(self):
         def rec(node, string, strings):
             if node.is_end:
-                strings.append("".join(string))
+                strings.append(string)
+                # strings.append("".join(string))
             for ch in node.children:
-                string.append(ch)
-                rec(node.children[ch], string, strings)
-                string.pop()
+                # string.append(ch)
+                rec(node.children[ch], string + ch, strings)
+                # string.pop()
         strings = []
-        rec(self, [], strings)
+        # rec(self, [], strings)
+        rec(self, "", strings)
         return strings
     
     
